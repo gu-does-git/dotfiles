@@ -190,8 +190,8 @@ end
 # \x1b[2J   <- clears tty
 # \x1b[1;1H <- goes to (1, 1) (start)
 alias spicetify="/home/personal/spicetify-cli/spicetify"
-alias clear='echo -en "\x1b[2J\x1b[1;1H" ; seq 1 (tput cols) | sort -R | spark | lolcat; PF_INFO="ascii title os uptime memory wm shell palette" /usr/local/bin/pfetch'
-alias cls='echo -en "\x1b[2J\x1b[1;1H" ; seq 1 (tput cols) | sort -R | spark | lolcat; PF_INFO="ascii title os uptime memory wm shell palette" /usr/local/bin/pfetch'
+alias clear='echo -en "\x1b[2J\x1b[1;1H" ; seq 1 (tput cols) | sort -R | spark | lolcat; PF_INFO="ascii title os uptime memory wm shell palette" pfetch'
+alias cls='echo -en "\x1b[2J\x1b[1;1H" ; seq 1 (tput cols) | sort -R | spark | lolcat; PF_INFO="ascii title os uptime memory wm shell palette" pfetch'
 
 # root privileges
 alias doas="doas --"
@@ -310,4 +310,4 @@ alias tips="lbrynet txo spend --type=support --is_not_my_input --blocking"
 starship init fish | source
 
 ### STARTUP PFETCH ###
-PF_INFO="ascii title os uptime memory wm shell palette" /usr/local/bin/pfetch
+PF_INFO="ascii title os uptime memory wm shell palette" pfetch
